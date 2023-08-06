@@ -1,3 +1,17 @@
+# Description
+
+This project is a simple contact management app using react with typescript
+
+## Functionalities
+
+1. CRUD operations
+2. Search Functionalities
+
+## Concepts incorporated
+
+1. React routing
+2. Hooks
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
