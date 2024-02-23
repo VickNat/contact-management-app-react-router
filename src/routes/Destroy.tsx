@@ -1,6 +1,5 @@
-import { ActionFunction, redirect, useNavigate, useParams } from 'react-router-dom'
+import { ActionFunction, redirect } from 'react-router-dom'
 import { deleteContact } from '../contacts'
-import { useEffect } from 'react'
 
 /**
  * Action function for the delete option

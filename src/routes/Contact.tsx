@@ -1,17 +1,13 @@
 import React from 'react'
-import { ContactLoader, UserContact } from '../models'
+import { ContactLoader } from '../models'
 import Favorite from './Favorite'
 import { getContact, updateContact } from '../contacts'
 import { 
-  LoaderFunctionArgs,
-  ParamParseKey,
-  Params,
   useLoaderData,
   Form,
   ActionFunction,
   LoaderFunction
 } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
 /**
  * Loader function
@@ -55,6 +51,7 @@ const Contact: React.FC = () => {
         <img
           key={contact? contact.avatar: 1}
           src={contact? contact.avatar: ""}
+          alt="avatar"
         />
       </div>
 
@@ -73,7 +70,6 @@ const Contact: React.FC = () => {
         {contact && contact.twitter && (
           <p>
             <a
-              target="_blank"
               href={`https://twitter.com/${contact.twitter}`}
             >
               {contact.twitter}
